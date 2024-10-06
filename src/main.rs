@@ -2,7 +2,7 @@ use std::env;
 use std::process;
 use minigrep::Config;
 
-
+/// 处理输入并保存为args迭代器
 fn main() {
     let config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {err}");
